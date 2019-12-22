@@ -1,0 +1,26 @@
+{
+  "name": "Weather-App-JS",
+  "version": "1.0.0",
+  "description": "This a app to know about the weather",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juakata/Weather-App-JS.git"
+  },
+  "keywords": [],
+  "author": "Andoni Uzquiano",
+  "license": "Mit",
+  "bugs": {
+    "url": "https://github.com/Juakata/Weather-App-JS/issues"
+  },
+  "homepage": "https://github.com/Juakata/Weather-App-JS#readme",
+  "devDependencies": {
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  }
+}
