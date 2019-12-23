@@ -29,5 +29,5 @@ if ('geolocation' in navigator) {
       });
   });
 } else {
-  alert('Your broser does not support the app.');
+  document.getElementById('error').innerHTML = error;
 }
