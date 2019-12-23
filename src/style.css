@@ -21,6 +21,13 @@ div {
   font-weight: bold;
 }
 
+#error {
+  padding: 5px;
+  border-radius: 5px;
+  background: red;
+  color: white;
+}
+
 #showInfo {
   background: black;
   max-width: 500px;
@@ -32,6 +39,6 @@ div {
 
 @media(max-width: 500px){
   div {
-    font-size: 15px;  
+    font-size: 15px;
   }
 }

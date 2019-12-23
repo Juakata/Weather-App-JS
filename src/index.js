@@ -21,11 +21,11 @@ if ('geolocation' in navigator) {
             document.getElementById('img-weather').src = response.data.images.original.url;
           })
           .catch((error) => {
-            alert(error);
+            document.getElementById('error').innerHTML = error;
           });
       })
       .catch((error) => {
-        alert(error);
+        document.getElementById('error').innerHTML = error;
       });
   });
 } else {
