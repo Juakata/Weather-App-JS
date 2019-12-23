@@ -8,8 +8,8 @@ if ('geolocation' in navigator) {
     fetch(`${proxy}https://api.darksky.net/forecast/c585ab3790ed34a967b7c3810abd299b/${latitude},${longitude}`)
       .then(response => response.json())
       .then((response) => {
-        const timezone = response.timezone;
-        const { temperature, summary, humidity } = response.currently
+        const { timezone, currently } = response;
+        const { temperature, summary, humidity } = currently;
 
         document.getElementById('timezone').innerHTML = timezone;
         document.getElementById('temperature').innerHTML = temperature;
