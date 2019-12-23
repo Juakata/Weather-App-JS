@@ -28,7 +28,7 @@ if ('geolocation' in navigator) {
       .catch((error) => {
         document.getElementById('error').style.display = 'block';
         document.getElementById('error').innerHTML = error;
-      });
+    });
   });
 } else {
   document.getElementById('error').innerHTML = error;
