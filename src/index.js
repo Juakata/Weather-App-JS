@@ -18,16 +18,16 @@ if ('geolocation' in navigator) {
         fetch(`https://api.giphy.com/v1/gifs/translate?api_key=11Fe1ivk6MxFFhuVm6lZdo7ZRtLwQ1Kf&s=${summary}-cloudy`)
           .then(response => response.json())
           .then((response) => {
-            document.getElementById("img-weather").src = response.data.images.original.url;
+            document.getElementById('img-weather').src = response.data.images.original.url;
           })
           .catch((error) => {
-            console.log(error);
+            alert(error);
           });
       })
       .catch((error) => {
-        console.log(error);
+        alert(error);
       });
-  })
+  });
 } else {
-  alert("Your broser does not support the app.");
+  alert('Your broser does not support the app.');
 }
