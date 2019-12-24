@@ -61,6 +61,25 @@ const startGeolocation = (city) => {
 
 startGeolocation('');
 
+function changeType() {
+  const fah = document.getElementById('fah');
+  const cel = document.getElementById('cel');
+  let grados = Number(document.getElementById('temperature').innerHTML);
+  if (fah.className === 'active left-border') {
+    fah.className = 'inactive left-border';
+    cel.className = 'active right-border';
+    grados = (grados - 32) / 1.8;
+    document.getElementById('temperature').innerHTML = grados.toFixed(2);
+  } else {
+    fah.className = 'active left-border';
+    cel.className = 'inactive right-border';
+    grados = grados * 1.8 + 32;
+    document.getElementById('temperature').innerHTML = grados.toFixed(2);
+  }
+}
+
+document.getElementById('changeType').addEventListener('click', changeType, false);
+
 document.getElementById('send').addEventListener('click', () => {
   const city = document.getElementById('city').value;
   startGeolocation(city);

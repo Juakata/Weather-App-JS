@@ -22,6 +22,11 @@ div {
   font-weight: bold;
 }
 
+#changeType {
+  cursor: pointer;
+  color: #0080ff;
+}
+
 #error {
   padding: 5px;
   border-radius: 5px;
@@ -73,6 +78,27 @@ div {
   background: black;
   color: white;
   cursor: pointer;
+}
+
+.right-border {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.left-border {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.active {
+  background: #42ff75;
+  padding: 7px 10px;
+}
+
+.inactive {
+  color: grey;
+  background: white;
+  padding: 5px 10px;
 }
 
 @media(max-width: 500px){
