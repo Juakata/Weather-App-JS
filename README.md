@@ -2,7 +2,7 @@
 
 > This project is a simple website that gets your location and display info about the weather.
 
-![Screenshot from 2019-12-23 12-40-13](https://user-images.githubusercontent.com/11781597/71374763-86280500-2581-11ea-89c5-1487466ddc5a.png)
+![Screenshot from 2019-12-24 13-49-55](https://user-images.githubusercontent.com/11781597/71424130-71687180-2654-11ea-80f2-635dafe3a59a.png)
 
 ## Built With
 
