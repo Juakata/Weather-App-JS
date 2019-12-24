@@ -1,0 +1,108 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  margin-top: 20px;
+  height: 50%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  color: white;
+  margin: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#changeType {
+  cursor: pointer;
+  color: #0080ff;
+}
+
+#error {
+  padding: 5px;
+  border-radius: 5px;
+  background: red;
+  color: white;
+  display: none;
+}
+
+#showInfo {
+  background: black;
+  max-width: 500px;
+  height: 100vh;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 6px solid #bfbfbf;
+}
+
+#form {
+  border: white solid 1px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.form-element {
+  padding: 5px;
+  color: white;
+}
+
+.form-element input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 3px;
+  outline: none;
+}
+
+.form-element button {
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 5px;
+  background: white;
+}
+
+.form-element button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.right-border {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.left-border {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.active {
+  background: #42ff75;
+  padding: 7px 10px;
+}
+
+.inactive {
+  color: grey;
+  background: white;
+  padding: 5px 10px;
+}
+
+@media(max-width: 500px){
+  div {
+    font-size: 15px;
+  }
+}

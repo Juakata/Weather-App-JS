@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div id="showInfo">
+      <img id="img-weather" src="#" alt="Weather">
+      <div>Timezone: <span id="timezone"></span></div>
+      <div>Temperature: <span id="temperature"></span>
+        <span id="changeType">
+          <span id="fah" class="active left-border">°F</span><span id="cel" class="inactive right-border">°C</span>
+        </span>
+      </div>
+
+      <div>Summary: <span id="summary"></span></div>
+      <div>Humidity: <span id="humidity"></span></div>
+      <form id="form">
+        <div class="form-element">
+          <label for="city">City: </label>
+          <input type="text" id="city">
+        </div>
+        <div class="form-element">
+          <button type="button" id="send">Send</button>
+        </div>
+      </form>
+    </div>
+    <div id="error"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
