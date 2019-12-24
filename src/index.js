@@ -12,7 +12,7 @@ const setGift = (summary) => {
       document.getElementById('error').style.display = 'block';
       document.getElementById('error').innerHTML = error;
     });
-}
+};
 
 const getWeatherInfo = (coords) => {
   fetch(`${proxy}https://api.darksky.net/forecast/c585ab3790ed34a967b7c3810abd299b/${coords[0]},${coords[1]}`)
@@ -32,7 +32,7 @@ const getWeatherInfo = (coords) => {
       document.getElementById('error').style.display = 'block';
       document.getElementById('error').innerHTML = error;
     });
-}
+};
 
 const startGeolocation = (city) => {
   document.getElementById('error').style.display = 'none';
@@ -54,10 +54,10 @@ const startGeolocation = (city) => {
       })
       .catch((error) => {
         document.getElementById('error').style.display = 'block';
-        document.getElementById('error').innerHTML = 'Something went wrong try again';
+        document.getElementById('error').innerHTML = `Something went wrong try again. ${error}`;
       });
   }
-}
+};
 
 startGeolocation('');
 
