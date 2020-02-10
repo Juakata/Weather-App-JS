@@ -26,7 +26,7 @@
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Juakata/Restaurant/issues).
+Feel free to check the [issues page](https://github.com/Juakata/Weather-App-JS/issues).
 
 ## Show your support
 
